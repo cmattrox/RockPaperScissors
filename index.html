@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock, Paper, Scissors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4 d-flex justify-content-center">Rock, Paper, Scissors</h1>
+        <p class="lead d-flex justify-content-center">The ultimate test of man versus machine.</p>
+    </div>
+    <div class="row" >
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Score Card</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Wins: </h6>
+                  <span id="wins"></span>
+                  <h6 class="card-subtitle mb-2 text-muted">Losses: </h6>
+                  <span id="losses"></span>
+                  <h6 class="card-subtitle mb-2 text-muted">Ties: </h6>
+                  <span id="ties"></span>
+                  <p class="card-text" id="manVsMachine"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Computer Chose: </h5>
+                    <h6 class="card-subtitle mb-2 text-muted" id="computerChoice"></h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Choices:</h5>
+                    <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary" value="1">Rock</button>
+                        <button type="button" class="btn btn-secondary" value="2">Paper</button>
+                        <button type="button" class="btn btn-secondary" value="3">Scissors</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title d-flex justify-content-center" id="winner"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
